@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: MedicalRiskAPI
+    env: python
+    region: oregon # ou votre région préférée
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    pythonVersion: "3.12.7"
